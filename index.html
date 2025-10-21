@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a href="#home" class="brand">
+          <span class="brand-text">Marci Metzger Homes</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#listings">Listings</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a class="cta" href="tel:+17775551234">Call Marci</a>
+        </nav>
+      </div>
+    </header>
+    <section id="home" class="hero hero-bg">
+      <h1>MARCI METZGER - THE RIDGE REALTY GROUP</h1>
+      <p>Pahrump Realtor, REALTOR FOR NEARLY 3 DECADES!</p>
+    </section>
+    <main>
+      <section class="search-listings" aria-labelledby="search-title">
+        <div class="container">
+          <h2 id="search-title" class="search-title">Search Listings</h2>
+
+          <form
+            class="search-grid"
+            action="/listings"
+            method="get"
+            role="search"
+          >
+            <!-- Location -->
+            <label class="field">
+              <span class="label">Location</span>
+              <select name="location" id="sl-location" required>
+                <option value="" disabled selected>Choose a location…</option>
+                <option value="pahrump">Pahrump</option>
+                <option value="mountain-falls">Mountain Falls</option>
+                <option value="las-vegas">Las Vegas</option>
+                <option value="spring-mountain">Spring Mountain</option>
+              </select>
+            </label>
+
+            <!-- Type -->
+            <label class="field">
+              <span class="label">Type</span>
+              <select name="type" id="sl-type">
+                <option value="">Any</option>
+                <option value="single-family">Single Family</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="condo">Condo</option>
+                <option value="multi-family">Multi-Family</option>
+                <option value="land">Land</option>
+                <option value="commercial">Commercial</option>
+              </select>
+            </label>
+
+            <!-- Sort By -->
+            <label class="field">
+              <span class="label">Sort By</span>
+              <select name="sort" id="sl-sort">
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="beds-desc">Beds: High → Low</option>
+                <option value="baths-desc">Baths: High → Low</option>
+                <option value="sf-desc">Sqft: High → Low</option>
+              </select>
+            </label>
+
+            <!-- Beds -->
+            <label class="field">
+              <span class="label">Bedrooms</span>
+              <select name="beds_min" id="sl-beds">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
+            </label>
+
+            <!-- Baths -->
+            <label class="field">
+              <span class="label">Baths</span>
+              <select name="baths_min" id="sl-baths">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+              </select>
+            </label>
+
+            <!-- Min Price -->
+            <label class="field">
+              <span class="label">Min Price</span>
+              <input
+                type="text"
+                inputmode="numeric"
+                name="price_min"
+                id="sl-min"
+                placeholder="$200,000"
+                autocomplete="off"
+              />
+            </label>
+
+            <!-- Max Price -->
+            <label class="field">
+              <span class="label">Max Price</span>
+              <input
+                type="text"
+                inputmode="numeric"
+                name="price_max"
+                id="sl-max"
+                placeholder="$600,000"
+                autocomplete="off"
+              />
+            </label>
+
+            <!-- Submit -->
+            <button class="btn-search" type="submit">Search Now</button>
+          </form>
+        </div>
+      </section>
+      <section id="sold" class="sold-section fancy">
+        <div class="container">
+          <h2 class="section-title">GET IT SOLD</h2>
+
+          <div class="sold-stack">
+            <!-- 1 — image left -->
+            <article class="sold-card left">
+              <figure class="sold-photo">
+                <img
+                  src="assets/images/residential.png"
+                  alt="Happy sellers in a modern kitchen"
+                />
+              </figure>
+
+              <div class="sold-panel">
+                <h3>Top Residential Sales Last 5 Years</h3>
+                <p>
+                  We helped nearly 90 clients in 2021, and closed
+                  <strong>$28.5M</strong> in sales! Our team works hard every
+                  day to grow and learn so we keep excelling in our market. Our
+                  clients deserve our best—and we make sure our best gets better
+                  every year.
+                </p>
+              </div>
+            </article>
+
+            <!-- 2 — image right -->
+            <article class="sold-card right">
+              <figure class="sold-photo">
+                <img
+                  src="assets/images/residential2.png"
+                  alt="Luxury home with pro marketing"
+                />
+              </figure>
+
+              <div class="sold-panel right">
+                <h3>Don’t Just List it…</h3>
+                <p>
+                  <strong>Get it SOLD!</strong> We exhaust every avenue to put
+                  your listing at the fingertips of every qualified buyer—pro
+                  photography, video, targeted ads, and smart strategy to get
+                  you <em>top dollar</em>.
+                </p>
+              </div>
+            </article>
+
+            <!-- 3 — image left -->
+            <article class="sold-card left">
+              <figure class="sold-photo">
+                <img
+                  src="assets/images/residential3.png"
+                  alt="Keys and a buyer guide on a desk"
+                />
+              </figure>
+
+              <div class="sold-panel">
+                <h3>Guide to Buyers</h3>
+                <p>
+                  Nobody knows the market like we do. Enjoy having a pro at your
+                  service—market analysis, upgrades lists, offer strategy, and a
+                  trusted contractor network on speed dial.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="affiliates" aria-labelledby="affiliates-title">
+        <div class="container">
+          <h2 id="affiliates-title" class="affiliates-title">
+            Proud Member Of
+          </h2>
+
+          <ul class="logo-grid">
+            <li class="logo-item">
+              <a href="#" aria-label="The Ridge Realty Group">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/BIG%20CIRCLE%202.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100"
+                  alt="The Ridge Realty Group"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li class="logo-item">
+              <a href="#" aria-label="Equal Housing Opportunity">
+                <img
+                  class="realtor"
+                  src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Equal%20Housing%20Logo.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:100,h:100,cg:trueg"
+                  alt="Equal Housing Opportunity"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li class="logo-item">
+              <a href="#" aria-label="REALTOR®">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Realtor%20Pin.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:112,h:100,cg:true"
+                  alt="REALTOR®"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li class="logo-item">
+              <a href="#" aria-label="Pahrump Valley Chamber of Commerce">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Chamber.jpg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100"
+                  alt="Pahrump Valley Chamber of Commerce"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="gallery-section"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="container">
+          <h2 class="section-title" id="gallery-title">Photo Gallery</h2>
+
+          <ul class="gallery-grid" role="list">
+            <!-- Card -->
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                data-caption="Bright modern kitchen with island"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG/:/cr=t:0%25,l:0.05%25,w:99.9%25,h:99.9%25/rs=w:984,h:655"
+                    alt="Modern kitchen"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG/:/cr=t:0%25,l:0.05%25,w:99.9%25,h:99.9%25/rs=w:984,h:655"
+                data-caption="Open living room with natural light"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=800&auto=format&fit=crop"
+                    alt="Open living room"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                data-caption="Resort-style backyard & pool"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                    alt="Backyard with pool"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                data-caption="Primary bedroom retreat"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                    alt="Primary bedroom"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                data-caption="Chef’s kitchen detail"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                    alt="Kitchen detail"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG/:/rs=w:984,h:656"
+                data-caption="Cozy patio for sunset gatherings"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG/:/rs=w:984,h:656"
+                    alt="Cozy patio"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-54.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                data-caption="Cozy patio for sunset gatherings"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-54.jpg-SMALL.JPG/:/rs=w:984,h:655"
+                    alt="Cozy patio"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+              <a
+                href="#!"
+                class="gallery-link"
+                data-full="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG/:/rs=w:984,h:656"
+                data-caption="Cozy patio for sunset gatherings"
+              >
+                <figure class="gallery-figure">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG/:/rs=w:984,h:656"
+                    alt="Cozy patio"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lightbox -->
+        <div
+          class="lightbox"
+          aria-hidden="true"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image preview"
+        >
+          <button class="lb-close" aria-label="Close">×</button>
+          <button class="lb-prev" aria-label="Previous image">‹</button>
+          <figure class="lb-figure">
+            <img class="lb-img" alt="" />
+            <figcaption class="lb-caption"></figcaption>
+          </figure>
+          <button class="lb-next" aria-label="Next image">›</button>
+        </div>
+      </section>
+      <section
+        class="services-section"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <h2 class="section-title" id="services-title">Our Services</h2>
+
+          <ul class="services-grid" role="list">
+            <!-- Card 1 -->
+            <li class="service-card">
+              <div class="service-icon" aria-hidden="true">
+                <!-- House / keys icon -->
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                >
+                  <path d="M12 3 2 12h2v9h6v-6h4v6h6v-9h2L12 3z" />
+                </svg>
+              </div>
+              <h3 class="service-title">Real Estate Done Right</h3>
+              <p class="service-text">
+                Nervous about your property adventure? Don’t be. Whether you're
+                getting ready to buy or sell your residence, looking at
+                investment properties, or just curious about the markets, our
+                team ensures you get the best experience possible!
+              </p>
+            </li>
+
+            <!-- Card 2 -->
+            <li class="service-card">
+              <div class="service-icon" aria-hidden="true">
+                <!-- Building icon -->
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3 22h18v-2H3v2zm2-4h14V2H5v16zm4-8h2v2H9V10zm0-4h2v2H9V6zm4 4h2v2h-2V10zm0-4h2v2h-2V6z"
+                  />
+                </svg>
+              </div>
+              <h3 class="service-title">Commercial &amp; Residential</h3>
+              <p class="service-text">
+                Large or small, condo or mansion, we can find it and get it at
+                the price that's right. Fixer-uppers? Luxury? We can help with
+                all of it! We live, work, and play in this community—happy to
+                help you place your hard-earned dollars.
+              </p>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="service-card">
+              <div class="service-icon" aria-hidden="true">
+                <!-- Shield/check icon -->
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"
+                  />
+                </svg>
+              </div>
+              <h3 class="service-title">Rely on Expertise</h3>
+              <p class="service-text">
+                Questions about affordability, credit, or loan options? Trust us
+                to connect you with the right people fast. We make sure you feel
+                confident and educated every step of the way.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="agent-section" id="agent">
+        <div class="container">
+          <h2 class="section-title">Meet Your Agent</h2>
+
+          <article id="about" class="agent-card">
+            <div class="agent-photo">
+              <!-- Replace src with your headshot URL -->
+              <img
+                src="assets/images/profile.png"
+                alt="Portrait of Marci Metzger, REALTOR®"
+                width="640"
+                height="640"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="agent-info">
+              <h3 class="agent-name">Marci Metzger</h3>
+              <p class="agent-title">REALTOR® — The Ridge Realty Group</p>
+
+              <ul class="agent-stats">
+                <li><strong>28+ yrs</strong> experience</li>
+                <li><strong>90+</strong> clients in 2021</li>
+                <li><strong>$28.5M</strong> volume</li>
+              </ul>
+
+              <p class="agent-blurb">
+                Local expert and full-service advisor. From market analysis to
+                vetted contractors, you’ll have a pro in your corner every step
+                of the way.
+              </p>
+
+              <div class="agent-actions">
+                <a class="btn" href="tel:+12069196886">Call (206) 919-6886</a>
+                <a class="btn-outline" href="mailto:info@example.com">Email</a>
+                <a
+                  class="btn-outline"
+                  href="https://wa.me/12069196886"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <h2 class="section-title" id="contact-title">Contact</h2>
+
+          <div class="contact-grid">
+            <!-- ===== Left: Send Message ===== -->
+            <div class="contact-card">
+              <h3 class="contact-subtitle">Send Message</h3>
+
+              <form
+                class="contact-form"
+                action="/contact"
+                method="post"
+                novalidate
+              >
+                <label class="field">
+                  <span class="label">Name</span>
+                  <input type="text" name="name" autocomplete="name" />
+                </label>
+
+                <label class="field">
+                  <span class="label"
+                    >Email<span aria-hidden="true">*</span></span
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    aria-required="true"
+                  />
+                </label>
+
+                <label class="field">
+                  <span class="label">Message</span>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="How can we help?"
+                  ></textarea>
+                </label>
+
+                <!-- reCAPTCHA (replace YOUR_SITE_KEY) -->
+                <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
+                <p class="recaptcha-note">
+                  This site is protected by reCAPTCHA and the Google
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener"
+                    >Privacy Policy</a
+                  >
+                  and
+                  <a
+                    href="https://policies.google.com/terms"
+                    target="_blank"
+                    rel="noopener"
+                    >Terms of Service</a
+                  >
+                  apply.
+                </p>
+
+                <div class="actions">
+                  <button class="btn" type="submit">Send</button>
+                  <a
+                    class="btn-outline"
+                    href="https://wa.me/12069196886"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Message us on WhatsApp
+                  </a>
+                </div>
+              </form>
+            </div>
+
+            <!-- ===== Right: Call or Visit ===== -->
+            <aside class="contact-card">
+              <h3 class="contact-subtitle">Call or Visit</h3>
+
+              <div class="contact-list">
+                <div class="contact-row">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.6 10.8c1.6 3.2 3.9 5.5 7.2 7.2l2.4-2.4c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.1.8.7 0 1.2.5 1.2 1.2V22c0 .7-.5 1.2-1.2 1.2C9.9 23.2.8 14.1.8 2.4.8 1.7 1.3 1 2 1h4.6c.7 0 1.2.5 1.2 1.2 0 1.4.3 2.8.8 4.1.2.4.1.9-.2 1.2L6.6 10.8z"
+                    />
+                  </svg>
+                  <a class="contact-link" href="tel:+12069196886"
+                    >(206) 919-6886</a
+                  >
+                </div>
+
+                <div class="contact-row">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 10.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 7.5 12 7.5s2.5 1.1 2.5 2.5S13.4 12.5 12 12.5z"
+                    />
+                  </svg>
+                  <a
+                    class="contact-link"
+                    target="_blank"
+                    rel="noopener"
+                    href="https://maps.google.com/?q=3190+HW-160,+Suite+F,+Pahrump,+NV+89048"
+                  >
+                    Marci Metzger - THE RIDGE REALTY GROUP<br />
+                    3190 HW-160, Suite F, Pahrump, Nevada 89048, United States
+                  </a>
+                </div>
+
+                <div class="hours">
+                  <h4 class="hours-title">Office Hours</h4>
+                  <p class="hours-status">Open today</p>
+                  <p class="hours-time">08:00 am – 07:00 pm</p>
+                  <p class="hours-note">Open daily: 8:00 am – 7:00 pm</p>
+                  <p class="hours-small">
+                    Appointments outside office hours available upon request.
+                    Just call!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Optional map (remove if not needed) -->
+              <div class="map-embed" aria-hidden="true">
+                <iframe
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=3190+HW-160,+Suite+F,+Pahrump,+NV+89048&output=embed"
+                >
+                </iframe>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
